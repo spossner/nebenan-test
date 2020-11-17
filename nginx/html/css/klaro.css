@@ -585,17 +585,6 @@ We declare all variables here as default so that they are easy to override...
   right: 0;
 }
 
-/*@media (min-width: 1024px) {
-  .klaro .cookie-notice:not(.cookie-modal-notice) {
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 4px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;^
-    max-width: 400px;
-  }
-}*/
-
 @media (max-width: 1023px) {
   .klaro .cookie-notice:not(.cookie-modal-notice) {
     border-style: none;

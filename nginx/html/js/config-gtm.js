@@ -37,11 +37,10 @@ var klaroConfig = {
         {
             name: 'gtm',
             title: 'GA & Facebook',
-            default: false,
             purposes: ['analytics'],
             translations: {
                 de: {
-                    description: 'Hiermit werden Besucher-Statistiken mit Google Analytics und Facebook erfasst.'
+                    description: 'HALLO! werden Besucher-Statistiken mit Google Analytics und Facebook erfasst.'
                 },
             },
             cookies: [
@@ -50,11 +49,7 @@ var klaroConfig = {
                 ['_gid', '/', '.nebenan.de'],
                 [/^_dc_gtm.*$/i, '/', '.nebenan.de'],
             ],
-            callback: function(consent, app) {
-                if(consent !== false){
-                    window.dataLayer.push({'event' : 'consent-analytics'});
-                }
-            },
+
         },
     ],
 };

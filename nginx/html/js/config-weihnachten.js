@@ -22,7 +22,7 @@ var klaroConfig = {
                 changeDescription:
                     'Wir haben unsere Cookies geändert. Bitte erneuere Deine Wahl.',
                 description:
-                    'Diese Seite verwendet Cookies. Dazu zählen notwendige Cookies (z.B. für eine sichere Anmeldung) sowie Cookies zur Erhebung statistischer Daten die uns helfen, diese Webseite weiter zu verbessern. Klicke auf „Alle auswählen", um allen Cookies zuzustimmen.',
+                    'Diese Seite verwendet Cookies. Dazu zählen notwendige Cookies (z.B. für eine sichere Anmeldung) sowie Cookies zur Erhebung statistischer Daten die uns helfen, diese Webseite weiter zu verbessern. Klicke auf „Los geht'+"'"+'s", um allen Cookies zuzustimmen.',
                 learnMore:
                     'Cookie-Einstellungen'
             },
