@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <title>Cooke Consent Test</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Klaro integration -->
+  <link rel="stylesheet" href="css/klaro.min.css">
+  <script defer type="application/javascript" src="js/config-adnuntius.js"></script>
+  <script defer type="application/javascript" data-config="klaroConfig" src="https://cdn.kiprotect.com/klaro/v0.7.8/klaro-no-css.js"></script>
+</head>
+<body>
+  <h1>Hello Seppo</h1>
+  <button name="change" onclick="klaro.show();">Change consent</button>
+  <hr/>
+  <div id="adn-00000000000cd912" style="display: none"></div>
+
+  <script type="text/plain"
+          data-type="application/javascript"
+          data-src="https://cdn.adnuntius.com/adn.js"
+          data-name="adnuntius"
+          async>
+  </script>
+  <script>
+    window.adn = window.adn || {}; adn.calls = adn.calls || [];
+    adn.calls.push(function() {
+      adn.request({ container: 'div', adUnits: [
+          { auId: '00000000000cd912', auW: '570', auH: '300', kv: { 'hood_id': ['277: Nikolassee'] } }
+        ]});
+    });
+  </script>
+</body>
+</html>

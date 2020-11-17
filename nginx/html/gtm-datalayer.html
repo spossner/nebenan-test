@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <title>Cooke Consent Test</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- init dataLayer -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PHL6VN8');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Klaro integration -->
+  <link rel="stylesheet" href="css/klaro.min.css">
+  <script defer type="application/javascript" src="js/config-gtm.min.js"></script>
+  <script defer type="application/javascript" data-config="klaroConfig" src="https://cdn.kiprotect.com/klaro/v0.7.8/klaro-no-css.js"></script>
+</head>
+<body>
+  <h1>GTM dataLayer</h1>
+  <p>More complex integration using callback in klaro service <b>gtm</b>. Note that the effect is only visible when tags in GTM are configured to not be used before a new GTM trigger was configured listenging to <em>consent-analytics</em> event on dataLayer.</p>
+  <button name="change" onclick="klaro.show();">Change consent</button>
+</body>
+</html>
