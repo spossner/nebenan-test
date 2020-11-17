@@ -1,0 +1,9 @@
+#docker-compose.yml
+version: '3.8'
+services:
+    webserver:
+        image: nginx:1.19
+        volumes:
+          - ./nginx/html:/usr/share/nginx/html
+        ports:
+            - "8080:80"
