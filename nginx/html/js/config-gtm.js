@@ -30,6 +30,7 @@ var klaroConfig = {
             purposes: {
                 necessary: 'Notwendige Cookies',
                 analytics: 'Besucher-Statistiken',
+                marketing: 'Marketing',
             },
         },
     },
@@ -50,6 +51,11 @@ var klaroConfig = {
                 [/^_dc_gtm.*$/i, '/', '.nebenan.de'],
             ],
 
+        },
+        {
+            purposes: ['marketing'],
+            name: "youtube",
+            contextualConsentOnly: true,
         },
     ],
 };
