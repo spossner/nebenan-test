@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+    <title>Cookie Consent Test</title>
+    <link rel="stylesheet" href="css/tab.css">
+    <style type="text/css">
+        .accordionItem span {
+          display: block;
+          background: #b2ca06;
+          margin: 0.5rem 0;
+          line-height: 2rem;
+        }
+
+        .accordionItem p {
+          display: none;
+          margin-top:0;
+        }
+
+        .accordionItem.active p {
+          display: block;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+          const accordionTitles = document.getElementsByClassName('accordionTitle');
+          const accordions = Array.prototype.map.call(accordionTitles, e => e.parentElement);
+          for (let i = 0; i < accordionTitles.length; i++) {
+            const e = accordionTitles[i];
+            e.addEventListener("click", ev => {
+              const acc = ev.target.parentElement;
+              if (!acc.classList.contains("active")) {
+                accordions.forEach(d => {
+                  d.classList.remove("active");
+                })
+                acc.classList.add("active");
+              } else {
+                acc.classList.remove("active");
+              }
+            });
+          }
+        });
+    </script>
+    <script defer type="application/javascript" src="js/tracking.js"></script>
+</head>
+<body>
+<h1>Accordion</h1>
+
+<hr/>
+
+<div class="accordion">
+    <div class="accordionItem">
+        <span class="accordionTitle">Titel</span>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="accordionItem">
+        <span class="accordionTitle">Titel</span>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="accordionItem">
+        <span class="accordionTitle">Titel</span>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="accordionItem">
+        <span class="accordionTitle">Titel</span>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+</div>
+</body>
+</html>
