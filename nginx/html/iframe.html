@@ -17,17 +17,19 @@
   <script type="text/javascript">
     !function(){
       var t = {
-        partner: "raiffeisen_neuulm",
+        partner: "gag_immobilien",
         params: {
-          utm_source: "raiffeisen_neuulm",
+          utm_source: "gag_immobilien",
           utm_medium: "widget",
           utm_campaign: "widget",
-          topic: "climate_environment_2021",
         }
-      };    var s = document.createElement('script');
+      };
+
+      var s = document.createElement('script');
       s.type = 'text/javascript';
       s.src = 'https://sdk.nebenan.de/npm/nebenan-iframe-sdk/' + (t.v || 'latest') + '/main.js';
       s.onload = function () { var e=e||!1;document.addEventListener("readystatechange",function(){e||(new GoodHoodSDK(t).init(),e=!0)}) }
+
       document.getElementsByTagName('head')[0].appendChild(s);
     }();
   </script>
