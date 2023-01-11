@@ -6,7 +6,7 @@
     <meta name="author" content=""/>
     <meta name="viewport"
           content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
-    <title>Cooke Consent Test</title>
+    <title>Cookie Consent Test</title>
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Klaro integration -->
@@ -17,10 +17,9 @@
     <script defer type="application/javascript" src="js/tracking.js"></script>
 </head>
 <body>
-<h1>Hello Andi</h1>
 <button name="change" onclick="klaro.show();">Change consent</button>
 <hr/>
-<div id="adn-00000000000e25ee" style="display: none"></div>
+<div id="adn-00000000000e25ee" style="display: none; border:1px solid yellow; height:350px;"></div>
 
 <script type="text/plain"
         data-type="application/javascript"
@@ -33,22 +32,24 @@
     adn.calls = adn.calls || [];
     adn.calls.push(function () {
         adn.request({
-            container: 'div', adUnits: [
+            container: 'div',
+            usi: 'seppo',
+            adUnits: [
                 {
                     auId: '00000000000e25ee',
                     auW: '570',
                     auH: '300',
-                    usi: 'seppo',
                     c: ['Berlin/Berlin/14129/Bart-Müllrose'],
                     kv: {
                         'app': ['WEB'],
                         'state': ['Berlin'],
                         'city': ['Berlin'],
-                        'zip_code': ['10273'],
+                        'zip_code': ['14129'],
                         'hood': ['Schlachtensee'],
                         'gender': ['MALE'],
+                        'support': ['YES'],
                     }
-                }
+                },
             ]
         });
     });
